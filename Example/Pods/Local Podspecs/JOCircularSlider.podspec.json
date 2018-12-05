@@ -1,0 +1,22 @@
+{
+  "name": "JOCircularSlider",
+  "version": "0.1.0",
+  "summary": "A short description of JOCircularSlider.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Jalal Ouraigua/JOCircularSlider",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jalal Ouraigua": "ouraigua@icloud.com"
+  },
+  "source": {
+    "git": "https://github.com/Jalal Ouraigua/JOCircularSlider.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JOCircularSlider/Classes/**/*"
+}

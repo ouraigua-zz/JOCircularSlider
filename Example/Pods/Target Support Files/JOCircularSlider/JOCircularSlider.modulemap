@@ -1,0 +1,6 @@
+framework module JOCircularSlider {
+  umbrella header "JOCircularSlider-umbrella.h"
+
+  export *
+  module * { export * }
+}

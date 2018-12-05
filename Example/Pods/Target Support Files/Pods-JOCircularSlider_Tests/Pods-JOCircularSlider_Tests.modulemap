@@ -1,0 +1,6 @@
+framework module Pods_JOCircularSlider_Tests {
+  umbrella header "Pods-JOCircularSlider_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
