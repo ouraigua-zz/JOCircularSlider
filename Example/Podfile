@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JOCircularSlider_Example' do
+  pod 'JOCircularSlider', :path => '../'
+
+  target 'JOCircularSlider_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
