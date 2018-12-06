@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9A9536F8A95805979063DD22 /* Pods_JOCircularSlider_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC0EF1308BF44BE0466D9BF /* Pods_JOCircularSlider_Example.framework */; };
+		AF737E2421B89B2B00BFBE5E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF737E2321B89B2B00BFBE5E /* GradientView.swift */; };
+		AF737E2621B89F8000BFBE5E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF737E2521B89F8000BFBE5E /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		857FCA310632359F6C66CC65 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9ED6373888E3CDF94E3F8213 /* Pods-JOCircularSlider_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JOCircularSlider_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JOCircularSlider_Tests/Pods-JOCircularSlider_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A310FF740AC505A50DEF761C /* Pods-JOCircularSlider_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JOCircularSlider_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JOCircularSlider_Tests/Pods-JOCircularSlider_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AF737E2321B89B2B00BFBE5E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		AF737E2521B89F8000BFBE5E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B53C2541DC14B9F694325C57 /* Pods-JOCircularSlider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JOCircularSlider_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JOCircularSlider_Example/Pods-JOCircularSlider_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D0CC336CBAD390916FD5F8FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D1B349DAD0AE068D7095DAFC /* Pods-JOCircularSlider_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JOCircularSlider_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JOCircularSlider_Example/Pods-JOCircularSlider_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				AF737E2321B89B2B00BFBE5E /* GradientView.swift */,
+				AF737E2521B89F8000BFBE5E /* Utils.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -326,6 +332,8 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				AF737E2421B89B2B00BFBE5E /* GradientView.swift in Sources */,
+				AF737E2621B89F8000BFBE5E /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

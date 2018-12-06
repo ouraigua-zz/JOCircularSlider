@@ -1,30 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="T5Y-X3-uD8">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="xFE-dW-ZTb">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="JOCircularSlider_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <viewController id="T5Y-X3-uD8" customClass="ViewController" customModule="JOCircularSlider_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Edf-eP-nqt" customClass="GradientView" customModule="JOCircularSlider_Example" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5P-LX-iZM">
+                                <rect key="frame" x="20" y="64" width="374" height="476"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fah-tE-CsW" customClass="CircularSlider" customModule="JOCircularSlider">
+                                        <rect key="frame" x="18.5" y="69.5" width="337" height="337"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fah-tE-CsW" secondAttribute="height" multiplier="1:1" id="v7c-ZT-Cf5"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isClockwise" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="endAngle">
+                                                <real key="value" value="310"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                                <real key="value" value="230"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color3">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color2">
+                                                <color key="value" red="0.15235996039999999" green="0.17974209029999999" blue="0.22156283139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color1">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color4">
+                                                <color key="value" red="0.13288810049999999" green="0.14611955109999999" blue="0.1740877602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="maxidotOffColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="minidotColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="maxidotOnColor">
+                                                <color key="value" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                                <color key="value" red="0.33810979099999999" green="0.36411823659999998" blue="0.42480460930000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="pointerSizeMultiplier">
+                                                <real key="value" value="0.14999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="minidotViewIsHidden" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="knobShadowOpacity">
+                                                <real key="value" value="0.80000000000000004"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="pointerColor2">
+                                                <color key="value" red="0.2530443235" green="0.27250927159999999" blue="0.31792748339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="pointerColor1">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fah-tE-CsW" firstAttribute="centerY" secondItem="P5P-LX-iZM" secondAttribute="centerY" id="A21-Rk-r56"/>
+                                    <constraint firstItem="fah-tE-CsW" firstAttribute="centerX" secondItem="P5P-LX-iZM" secondAttribute="centerX" id="fPN-4L-4sw"/>
+                                    <constraint firstItem="fah-tE-CsW" firstAttribute="width" secondItem="P5P-LX-iZM" secondAttribute="width" multiplier="0.9" id="wXF-02-uHg"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="6nV-kU-kJg">
+                                <rect key="frame" x="41.5" y="565" width="331" height="257"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.86000001430511475" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yng-5x-Nhy" customClass="DesignableSlider" customModule="JOCircularSlider_Example" customModuleProvider="target">
+                                        <rect key="frame" x="-2" y="0.0" width="335" height="16"/>
+                                        <color key="tintColor" red="0.20392156859999999" green="0.23529411759999999" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="thumbTintColor" red="0.2530443235" green="0.27250927159999999" blue="0.31792748339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="thumbImage" value="thumb"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeRadius:" destination="T5Y-X3-uD8" eventType="valueChanged" id="SLY-b5-FoX"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.69999998807907104" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HRQ-Xq-Tde" customClass="DesignableSlider" customModule="JOCircularSlider_Example" customModuleProvider="target">
+                                        <rect key="frame" x="-2" y="29" width="335" height="16"/>
+                                        <color key="tintColor" red="0.20392156859999999" green="0.23529411759999999" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="thumbTintColor" red="0.2530443235" green="0.27250927159999999" blue="0.31792748339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="thumbImage" value="thumb"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeRadius:" destination="T5Y-X3-uD8" eventType="valueChanged" id="6a3-yR-tSc"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.54000002145767212" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LTv-bA-2b0" customClass="DesignableSlider" customModule="JOCircularSlider_Example" customModuleProvider="target">
+                                        <rect key="frame" x="-2" y="58" width="335" height="16"/>
+                                        <color key="tintColor" red="0.20392156859999999" green="0.23529411759999999" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="thumbTintColor" red="0.2530443235" green="0.27250927159999999" blue="0.31792748339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="thumbImage" value="thumb"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeRadius:" destination="T5Y-X3-uD8" eventType="valueChanged" id="Ic4-Rx-Sze"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="40" minValue="30" maxValue="40" translatesAutoresizingMaskIntoConstraints="NO" id="cRz-cV-OIe" customClass="DesignableSlider" customModule="JOCircularSlider_Example" customModuleProvider="target">
+                                        <rect key="frame" x="-2" y="87" width="335" height="16"/>
+                                        <color key="tintColor" red="0.20392156859999999" green="0.23529411759999999" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="thumbTintColor" red="0.2530443235" green="0.27250927159999999" blue="0.31792748339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="thumbImage" value="thumb"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeDotCount:" destination="T5Y-X3-uD8" eventType="valueChanged" id="0ps-pD-G6K"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.083333335816860199" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DLi-cF-q6u" customClass="DesignableSlider" customModule="JOCircularSlider_Example" customModuleProvider="target">
+                                        <rect key="frame" x="-2" y="116" width="335" height="16"/>
+                                        <color key="tintColor" red="0.20392156859999999" green="0.23529411759999999" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="thumbTintColor" red="0.2530443235" green="0.27250927159999999" blue="0.31792748339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="thumbImage" value="thumb"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeColor:" destination="T5Y-X3-uD8" eventType="valueChanged" id="nOr-Wk-QX0"/>
+                                        </connections>
+                                    </slider>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wvp-Dj-yOk">
+                                        <rect key="frame" x="0.0" y="145" width="331" height="29"/>
+                                        <segments>
+                                            <segment title="Dark"/>
+                                            <segment title="Light"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.33725490200000002" green="0.36470588240000001" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="toggleTheme:" destination="T5Y-X3-uD8" eventType="valueChanged" id="208-Pl-Ele"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wHe-2Y-utO">
+                                        <rect key="frame" x="0.0" y="187" width="331" height="29"/>
+                                        <segments>
+                                            <segment title="Mini"/>
+                                            <segment title="Maxi"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.33725490200000002" green="0.36470588240000001" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="toggleMiniView:" destination="T5Y-X3-uD8" eventType="valueChanged" id="xKO-sO-xu8"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pgh-FY-DH3">
+                                        <rect key="frame" x="0.0" y="229" width="331" height="29"/>
+                                        <segments>
+                                            <segment title="Anti Clockwise"/>
+                                            <segment title="Clockwise"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.33725490200000002" green="0.36470588240000001" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="toggleDirection:" destination="T5Y-X3-uD8" eventType="valueChanged" id="TJq-7X-Wm4"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=regular" spacing="16"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zts-4c-D2G" firstAttribute="trailing" secondItem="P5P-LX-iZM" secondAttribute="trailing" constant="20" id="EOh-gt-afY"/>
+                            <constraint firstItem="P5P-LX-iZM" firstAttribute="top" secondItem="zts-4c-D2G" secondAttribute="top" constant="20" id="Pdn-zc-bQm"/>
+                            <constraint firstItem="6nV-kU-kJg" firstAttribute="centerX" secondItem="zts-4c-D2G" secondAttribute="centerX" id="aJO-QE-46r"/>
+                            <constraint firstItem="P5P-LX-iZM" firstAttribute="leading" secondItem="zts-4c-D2G" secondAttribute="leading" constant="20" id="kv9-bM-Laf"/>
+                            <constraint firstItem="zts-4c-D2G" firstAttribute="bottom" secondItem="6nV-kU-kJg" secondAttribute="bottom" constant="40" id="n5A-FR-aYu"/>
+                            <constraint firstItem="6nV-kU-kJg" firstAttribute="top" secondItem="P5P-LX-iZM" secondAttribute="bottom" constant="25" id="rBl-1f-UNO"/>
+                            <constraint firstItem="6nV-kU-kJg" firstAttribute="width" secondItem="Edf-eP-nqt" secondAttribute="width" multiplier="0.8" id="vXe-Dk-VDm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zts-4c-D2G"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color1">
+                                <color key="value" red="0.10980392160000001" green="0.12941176469999999" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color2">
+                                <color key="value" red="0.1333333333" green="0.14117647059999999" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="circularSlider" destination="fah-tE-CsW" id="Q8q-lf-3Mi"/>
+                        <outlet property="stackView" destination="6nV-kU-kJg" id="1N4-gV-ccl"/>
+                        <outlet property="widthConstraint" destination="wXF-02-uHg" id="UT3-no-Cft"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRY-MI-PvD" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="262" y="141"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="thumb" width="16" height="16"/>
+    </resources>
 </document>
