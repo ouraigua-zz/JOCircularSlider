@@ -304,7 +304,7 @@ open class CircularSlider: UIControl {
 
     // MARK: - Functions
 
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setValue(renderer.minimumValue)
     }
