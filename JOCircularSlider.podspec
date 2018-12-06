@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
     s.name             = 'JOCircularSlider'
     s.version          = '1.0.1'
-    s.summary          = 'A highly customaizable and reusable circular slider for iOS applications.'
+    s.summary          = 'A highly customisable and reusable circular slider for iOS applications.'
 
     # This description is used to generate tags and improve search results.
     #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     #   * Finally, don't worry about the indent, CocoaPods strips it!
 
     s.description      = <<-DESC
-    A highly customaizable and reusable circular slider for iOS applications.
+    A highly customisable and reusable circular slider for iOS applications.
     The knob control uses no preset images and every one of its elements is drawn completely in code making very adaptable to every design and theme.
     It's written in Swift 4.2 and it's 100% IBDesignable and all parameters are IBInspectable.
     You can control almost every aspect of the slider's design: Size, colors, direction (clockwise/anti-clockwise), etc...
