@@ -476,6 +476,7 @@ private extension Renderer {
             toolBar.barStyle = .blackTranslucent
             let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
             let done = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(keyboardDoneButtonTapped))
+            done.tintColor = .lightGray
             toolBar.items = [done, flexibleSpace]
             toolBar.sizeToFit()
             textField.inputAccessoryView = toolBar
@@ -486,6 +487,7 @@ private extension Renderer {
         textField.textAlignment = .center
         textField.text = ""
         textField.keyboardType = .numberPad
+        textField.keyboardAppearance = .dark
         textField.clearsOnInsertion = true
         textField.adjustsFontSizeToFitWidth = true
         if let height = circularSlider?.bounds.height {
