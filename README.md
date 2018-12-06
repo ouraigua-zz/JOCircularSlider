@@ -7,13 +7,16 @@
 ## Overview
 
 JOCircularSlider is a highly customaizable and reusable circular slider for iOS applications.
+The knob control uses no preset images and every one of its elements is drawn completely in code making very adaptable to every design and theme.  
 
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-![](/Screenshots/shot1.gif) ![](/Screenshots/shot2.gif) ![](/Screenshots/shot3.gif)
+![](https://github.com/ouraigua/JOCircularSlider/blob/master/Screenshots/shot1.gif) 
+![](https://github.com/ouraigua/JOCircularSlider/blob/master/Screenshots/shot2.gif) 
+![](https://github.com/ouraigua/JOCircularSlider/blob/master/Screenshots/shot3.gif)
 
 ## Requirements
 
@@ -38,7 +41,7 @@ import JOCircularSlider
 Drag a UIView to your storyboard, change its class of to CircularSlider and start visually customising the design to your liking.
 All the paramters are IBInspectable, so you can configure the slider straight from the attribute inspector tab, without having to write a single line of code.
 
-![](/Screenshots/shot4.gif)
+![](https://github.com/ouraigua/JOCircularSlider/blob/master/Screenshots/shot4.gif)
 
 2. Programatically:
 
