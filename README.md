@@ -13,7 +13,7 @@ JOCircularSlider is a highly customaizable and reusable circular slider for iOS 
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-![](/Screenshots/shot1.gif)![](/Screenshots/shot2.gif)
+![](/Screenshots/shot1.gif) ![](/Screenshots/shot2.gif) ![](/Screenshots/shot3.gif)
 
 ## Requirements
 
@@ -38,6 +38,8 @@ import JOCircularSlider
 Drag a UIView to your storyboard, change its class of to CircularSlider and start visually customising the design to your liking.
 All the paramters are IBInspectable, so you can configure the slider straight from the attribute inspector tab, without having to write a single line of code.
 
+![](/Screenshots/shot4.gif)
+
 2. Programatically:
 
 ```swift
@@ -51,6 +53,12 @@ circularSlider.maximumValue = 60
 circularSlider.isClockwise = false
 ```
 These are just few of the many params you can configure for the slider.
+
+## References
+
+The project is Inspired by:
+- [How To Make a Custom Control Tutorial: A Reusable Knob](https://www.raywenderlich.com/5294-how-to-make-a-custom-control-tutorial-a-reusable-knob)
+- [HGCircularSlider](https://github.com/HamzaGhazouani/HGCircularSlider)
 
 ## Author
 

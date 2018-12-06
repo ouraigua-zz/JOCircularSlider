@@ -49,11 +49,12 @@ class ViewController: UIViewController {
         let darkColor = UIColor(red: 86/255.0, green: 93/255.0, blue: 108/255.0, alpha: 1)
         let lightColor = UIColor(red: 136/255.0, green: 143/255.0, blue: 160/255.0, alpha: 1)
         let sliderDark = UIColor(red: 52/255.0, green: 60/255.0, blue: 72/255.0, alpha: 1)
+        let sliderLight = UIColor(red: 128/255.0, green: 136/255.0, blue: 149/255.0, alpha: 1)
 
         for subview in stackView.subviews {
 
             if let slider = subview as? UISlider {
-                slider.tintColor = theme == .dark ? sliderDark : .white
+                slider.tintColor = theme == .dark ? sliderDark : sliderLight
                 slider.maximumTrackTintColor = theme == .dark ? .black : UIColor.white.withAlphaComponent(0.4)
 
             } else {
