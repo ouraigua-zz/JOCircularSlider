@@ -6,7 +6,7 @@
 
 ## Overview
 
-JOCircularSlider is a highly customaizable and reusable circular slider for iOS applications.
+JOCircularSlider is a highly customisable and reusable circular slider for iOS applications.
 The knob control uses no preset images and every one of its elements is drawn completely in code making very adaptable to every design and theme.  
 
 
