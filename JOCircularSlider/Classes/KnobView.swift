@@ -102,7 +102,7 @@ class KnobView: UIView {
     }()
 
     lazy private var glowCircleLayer: CircularLayer = {
-        let layer = CircularLayer(colors: [.red, .blue], maskType: .stroke(width: 5))
+        let layer = CircularLayer(colors: [onColor, onColor], maskType: .stroke(width: 5))
         layer.multiplier = middleCircleMultiplier
         return layer
     }()
