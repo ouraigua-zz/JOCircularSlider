@@ -43,12 +43,12 @@ All the paramters are IBInspectable, so you can configure the slider straight fr
 ```swift
 
 import JOCircularSlider
-let circularSlider = CircularSlider(frame: .zero)
+let circularSlider = CircularSlider(frame: aFrame)
 circularSlider.startAngle = 230
 circularSlider.endAngle = 310
 circularSlider.minimumValue = 0
 circularSlider.maximumValue = 60
-circularSlider.isClockwise = true
+circularSlider.isClockwise = false
 ```
 These are just few of the many params you can configure for the slider.
 
