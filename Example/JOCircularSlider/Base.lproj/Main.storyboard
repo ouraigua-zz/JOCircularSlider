@@ -85,7 +85,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="6nV-kU-kJg">
-                                <rect key="frame" x="41.5" y="565" width="331" height="257"/>
+                                <rect key="frame" x="41.5" y="600" width="331" height="257"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.86000001430511475" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yng-5x-Nhy" customClass="DesignableSlider" customModule="JOCircularSlider_Example" customModuleProvider="target">
                                         <rect key="frame" x="-2" y="0.0" width="335" height="16"/>
@@ -190,8 +190,8 @@
                             <constraint firstItem="P5P-LX-iZM" firstAttribute="top" secondItem="zts-4c-D2G" secondAttribute="top" constant="20" id="Pdn-zc-bQm"/>
                             <constraint firstItem="6nV-kU-kJg" firstAttribute="centerX" secondItem="zts-4c-D2G" secondAttribute="centerX" id="aJO-QE-46r"/>
                             <constraint firstItem="P5P-LX-iZM" firstAttribute="leading" secondItem="zts-4c-D2G" secondAttribute="leading" constant="20" id="kv9-bM-Laf"/>
-                            <constraint firstItem="zts-4c-D2G" firstAttribute="bottom" secondItem="6nV-kU-kJg" secondAttribute="bottom" constant="40" id="n5A-FR-aYu"/>
-                            <constraint firstItem="6nV-kU-kJg" firstAttribute="top" secondItem="P5P-LX-iZM" secondAttribute="bottom" constant="25" id="rBl-1f-UNO"/>
+                            <constraint firstItem="zts-4c-D2G" firstAttribute="bottom" secondItem="6nV-kU-kJg" secondAttribute="bottom" constant="5" id="n5A-FR-aYu"/>
+                            <constraint firstItem="6nV-kU-kJg" firstAttribute="top" secondItem="P5P-LX-iZM" secondAttribute="bottom" constant="60" id="rBl-1f-UNO"/>
                             <constraint firstItem="6nV-kU-kJg" firstAttribute="width" secondItem="Edf-eP-nqt" secondAttribute="width" multiplier="0.8" id="vXe-Dk-VDm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zts-4c-D2G"/>

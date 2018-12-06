@@ -11,12 +11,12 @@
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9A9536F8A95805979063DD22 /* Pods_JOCircularSlider_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC0EF1308BF44BE0466D9BF /* Pods_JOCircularSlider_Example.framework */; };
 		AF737E2421B89B2B00BFBE5E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF737E2321B89B2B00BFBE5E /* GradientView.swift */; };
 		AF737E2621B89F8000BFBE5E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF737E2521B89F8000BFBE5E /* Utils.swift */; };
+		AF737E2921B8D60400BFBE5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF737E2721B8D60400BFBE5E /* LaunchScreen.storyboard */; };
+		AF737E2B21B8D71900BFBE5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF737E2A21B8D71900BFBE5E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,6 @@
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* JOCircularSlider_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JOCircularSlider_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -48,6 +46,8 @@
 		A310FF740AC505A50DEF761C /* Pods-JOCircularSlider_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JOCircularSlider_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JOCircularSlider_Tests/Pods-JOCircularSlider_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AF737E2321B89B2B00BFBE5E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		AF737E2521B89F8000BFBE5E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		AF737E2821B8D60400BFBE5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF737E2A21B8D71900BFBE5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53C2541DC14B9F694325C57 /* Pods-JOCircularSlider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JOCircularSlider_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JOCircularSlider_Example/Pods-JOCircularSlider_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D0CC336CBAD390916FD5F8FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D1B349DAD0AE068D7095DAFC /* Pods-JOCircularSlider_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JOCircularSlider_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JOCircularSlider_Example/Pods-JOCircularSlider_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,9 +121,9 @@
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				AF737E2321B89B2B00BFBE5E /* GradientView.swift */,
 				AF737E2521B89F8000BFBE5E /* Utils.swift */,
+				AF737E2A21B8D71900BFBE5E /* Assets.xcassets */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				AF737E2721B8D60400BFBE5E /* LaunchScreen.storyboard */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for JOCircularSlider";
@@ -253,9 +253,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF737E2921B8D60400BFBE5E /* LaunchScreen.storyboard in Resources */,
+				AF737E2B21B8D71900BFBE5E /* Assets.xcassets in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,12 +364,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+		AF737E2721B8D60400BFBE5E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
+				AF737E2821B8D60400BFBE5E /* Base */,
 			);
-			name = LaunchScreen.xib;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

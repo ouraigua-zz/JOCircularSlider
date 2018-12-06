@@ -13,7 +13,7 @@ JOCircularSlider is a highly customaizable and reusable circular slider for iOS 
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-![](/Screenshots/shot1.gif)
+![](/Screenshots/shot1.gif)![](/Screenshots/shot2.gif)
 
 ## Requirements
 
