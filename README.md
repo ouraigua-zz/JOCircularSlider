@@ -6,6 +6,7 @@
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg?style=flat)]()
 [![Twitter: @ouraigua](https://img.shields.io/badge/contact-@ouraigua-blue.svg?style=flat)](https://twitter.com/ouraigua)
 [![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/ouraigua/jocircularslider)](http://clayallsopp.github.io/readme-score?url=https://github.com/ouraigua/jocircularslider)
+[![codebeat badge](https://codebeat.co/badges/c4db03f5-903a-4b0e-84bb-98362fc5bd7a)](https://codebeat.co/projects/github-com-ouraigua-jocircularslider-master)
 
 ## Overview
 
