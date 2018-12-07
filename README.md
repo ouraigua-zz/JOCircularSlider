@@ -3,7 +3,8 @@
 [![Version](https://img.shields.io/cocoapods/v/JOCircularSlider.svg?style=flat)](https://cocoapods.org/pods/JOCircularSlider)
 [![License](https://img.shields.io/cocoapods/l/JOCircularSlider.svg?style=flat)](https://cocoapods.org/pods/JOCircularSlider)
 [![Platform](https://img.shields.io/cocoapods/p/JOCircularSlider.svg?style=flat)](https://cocoapods.org/pods/JOCircularSlider)
-
+[![Language](https://img.shields.io/badge/language-Swift-orange.svg?style=flat)]()
+[![Twitter: @ouraigua](https://img.shields.io/badge/contact-@ouraigua-blue.svg?style=flat)](https://twitter.com/ouraigua)
 ## Overview
 
 JOCircularSlider is a highly customisable and reusable circular slider for iOS applications.
