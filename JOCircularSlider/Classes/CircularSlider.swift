@@ -309,6 +309,8 @@ open class CircularSlider: UIControl {
         guard abs(angelDeltaAsPercentage) < 1 else { return }
         let newValue  = isClockwise ? value + angelDeltaAsPercentage : value - angelDeltaAsPercentage
         setValue(newValue, isPercentage: true)
+
+        sendActions(for: .valueChanged)
     }
     
     // MARK: - Public

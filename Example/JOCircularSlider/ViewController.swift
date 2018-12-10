@@ -11,7 +11,11 @@ import JOCircularSlider
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var circularSlider: CircularSlider!
+    @IBOutlet weak var circularSlider: CircularSlider! {
+        didSet {
+            circularSlider.addTarget(self, action: #selector(handleValueChanged(_:)), for: .valueChanged)
+        }
+    }
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var widthConstraint: NSLayoutConstraint! {
         didSet {
@@ -115,6 +119,10 @@ class ViewController: UIViewController {
 
     @IBAction private func changeColor(_ sender: UISlider) {
         circularSlider.maxidotOnColor = UIColor(hue: CGFloat(sender.value), saturation: 1, brightness: 1, alpha: 1)
+    }
+
+    @IBAction func handleValueChanged(_ sender: CircularSlider) {
+        print(sender.value)
     }
 
     

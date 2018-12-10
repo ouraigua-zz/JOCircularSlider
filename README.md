@@ -38,9 +38,6 @@ pod 'JOCircularSlider'
 ## Usage
 1. Visually:
 
-```swift
-import JOCircularSlider
-```
 Drag a UIView to your storyboard, change its class of to CircularSlider and start visually customising the design to your liking.
 All the parameters are IBInspectable, so you can configure the slider straight from the attribute inspector tab, without having to write a single line of code.
 
@@ -68,6 +65,7 @@ The slider's `value` property is read-only.
 */
 open private (set) var value: Float = 0
 ```
+
 To set the slider's value use the following:
 ```swift
 /**
@@ -76,6 +74,11 @@ To set the slider's value use the following:
     - parameter isPercentage:  specifies if newValue is in the range [0.0, 1.0] or not
 */
 open func setValue(_ newValue: Float, isPercentage: Bool = false)
+```
+
+In order to get value change notifications, use the `Target-Action` pattern which is an inherent part of UIControl, like so:
+``` swift
+circularSlider.addTarget(target: Any?, action: Selector, for: UIControl.valueChanged)
 ```
 
 To Control the text's appearance, use these:
