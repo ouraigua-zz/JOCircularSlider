@@ -14,8 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var circularSlider: CircularSlider! {
         didSet {
             circularSlider.addTarget(self, action: #selector(handleValueChanged(_:)), for: .valueChanged)
+            circularSlider.addTarget(self, action: #selector(didBeginEditing), for: .editingDidBegin)
+            circularSlider.addTarget(self, action: #selector(didEndEditing), for: .editingDidEnd)
         }
     }
+
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var widthConstraint: NSLayoutConstraint! {
         didSet {
@@ -121,8 +124,17 @@ class ViewController: UIViewController {
         circularSlider.maxidotOnColor = UIColor(hue: CGFloat(sender.value), saturation: 1, brightness: 1, alpha: 1)
     }
 
+
+    @objc func didBeginEditing() {
+        print("\n" + "didBeginEditing\n")
+    }
+    
+    @objc func didEndEditing() {
+        print("\n" + "didBeginEditing\n")
+    }
+
     @IBAction func handleValueChanged(_ sender: CircularSlider) {
-        print(sender.value)
+        print("value: \(sender.value)")
     }
 
     

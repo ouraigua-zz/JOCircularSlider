@@ -291,6 +291,7 @@ open class CircularSlider: UIControl {
 
         let distanceToOrigin = location - centerPoint
         lastTouchAngle = atan2(distanceToOrigin.y, distanceToOrigin.x).toDegree
+        sendActions(for: .editingDidBegin)
     }
 
     override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -311,6 +312,11 @@ open class CircularSlider: UIControl {
         setValue(newValue, isPercentage: true)
 
         sendActions(for: .valueChanged)
+    }
+
+    open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        sendActions(for: .editingDidEnd)
     }
     
     // MARK: - Public
