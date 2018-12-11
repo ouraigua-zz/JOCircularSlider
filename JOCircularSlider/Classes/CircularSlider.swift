@@ -258,6 +258,11 @@ open class CircularSlider: UIControl {
         set { renderer.isClockwise = newValue }
     }
 
+    @IBInspectable open var isNegative: Bool {
+        get { return renderer.isNegative }
+        set { renderer.isNegative = newValue }
+    }
+
     // MARK: - Private Properties
 
     lazy private var renderer = Renderer(with: self)
@@ -367,6 +372,11 @@ class Renderer {
         didSet {
             miniDotView.isClockwise = isClockwise
             maxiDotView.isClockwise = isClockwise
+        }
+    }
+    fileprivate var isNegative: Bool = false {
+        didSet {
+
         }
     }
     fileprivate var textFieldIsHidden: Bool = false
@@ -521,6 +531,9 @@ private extension Renderer {
         if isPercentage {
             // convert value (0...1) to a value within proposed range
             value = Int(newValue * (maximumValue - minimumValue) + minimumValue)
+        }
+        if isNegative {
+            value = Int(Float(value) - maximumValue)
         }
         switch value {
         case Int(minimumValue): textField.text = "MIN"
