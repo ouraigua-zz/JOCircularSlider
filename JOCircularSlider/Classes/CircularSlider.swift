@@ -316,7 +316,7 @@ open class CircularSlider: UIControl {
         let newValue  = isClockwise ? value + angelDeltaAsPercentage : value - angelDeltaAsPercentage
         setValue(newValue, isPercentage: true)
 
-        sendActions(for: .valueChanged)
+        //sendActions(for: .valueChanged)
     }
 
     open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -343,6 +343,8 @@ open class CircularSlider: UIControl {
         renderer.updateText(with: value)
         renderer.updatePointerView(in: bounds, value: value)
         renderer.maxiDotView.updateColors(using: value)
+
+        sendActions(for: .valueChanged)
     }
 
     open func setTextFont(named: String, textColor: UIColor, multiplier: CGFloat) {
@@ -496,6 +498,7 @@ private extension Renderer {
             return
         }
         circularSlider.setValue(Float(newValue))
+        circularSlider.sendActions(for: .editingDidEnd)
         maxiDotView.layoutSubviews()
     }
 
