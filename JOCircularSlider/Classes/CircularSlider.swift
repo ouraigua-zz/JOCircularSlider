@@ -499,7 +499,7 @@ private extension Renderer {
         }
         circularSlider.setValue(Float(newValue))
         circularSlider.sendActions(for: .editingDidEnd)
-        maxiDotView.layoutSubviews()
+        //maxiDotView.setNeedsLayout()
     }
 
     // MARK: - Updates
