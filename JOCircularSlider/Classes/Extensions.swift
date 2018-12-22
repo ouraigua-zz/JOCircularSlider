@@ -24,6 +24,13 @@ extension FloatingPoint {
         let degree = self * 180 / .pi
         return degree >= 0 ? degree : 360 + degree
     }
+
+    public func roundedDown(toPlaces places: Int) -> Self {
+        let rounded = self.rounded(.down)
+        let power = Self(Int(powf(10, Float(places))))
+        let decimal = ((self - rounded) * power).rounded(.down)
+        return rounded + (decimal / power)
+    }
 }
 
 extension CGPoint {

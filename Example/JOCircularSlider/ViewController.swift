@@ -78,7 +78,8 @@ class ViewController: UIViewController {
         circularSlider.startAngle = direction.startAngle
         circularSlider.endAngle = direction.endAngle
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            self.circularSlider.setValue(self.circularSlider.value, isPercentage: true)
+            let value = self.circularSlider.value
+            self.circularSlider.value = value
         }
     }
 
@@ -111,8 +112,8 @@ class ViewController: UIViewController {
             circularSlider.knobMiddleCircleMultiplier = newMultiplier
         }
 
-        circularSlider.setValue(circularSlider.value, isPercentage: true)
-
+        let value = circularSlider.value
+        circularSlider.value = value
     }
 
     @IBAction private func changeDotCount(_ sender: UISlider) {
@@ -135,6 +136,10 @@ class ViewController: UIViewController {
 
     @IBAction func handleValueChanged(_ sender: CircularSlider) {
         print("value: \(sender.value)")
+
+        // If you need to override the formatting of the text in the
+        // label, then use this.
+        // circularSlider.setLabelText(String(format: "%.3f", sender.value))
     }
 
     

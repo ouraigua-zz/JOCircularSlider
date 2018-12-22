@@ -57,34 +57,58 @@ circularSlider.isClockwise = false
 ```
 These are just few of the many params you can configure for the slider.
 
-The slider's `value` property is read-only.
+The slider's  min/max values are IBInspectable and default to 0.0 and 100.0 respectively.
+They also support negative and positive values or a mixture of them. 
+
 ```swift
-/**
-    returns a value in the range 0.0 (minimumValue) to 1.0 (maximumValue). 
-    The default value of this property is 0.0. 
-*/
-open private (set) var value: Float = 0
+@IBInspectable open var minimumValue: CGFloat = 0
+@IBInspectable open var maximumValue: CGFloat = 100
 ```
 
-To set the slider's value use the following:
+The slider's `value` property is both { get set } and it is designed to work similarly to the familiar value property of UIKit's generic UISlider.
+
 ```swift
 /**
-    Set the `value`.
-    - parameter newValue:      if `isPercentage` then new value must be in the range 0.0 to 1.0
-    - parameter isPercentage:  specifies if newValue is in the range [0.0, 1.0] or not
+    This value will be pinned to minimumValue/maximumValue
+    The default value of this property is 0.0. 
 */
-open func setValue(_ newValue: Float, isPercentage: Bool = false)
+@IBInspectable open var value: CGFloat  // { get set }
+
 ```
 
 In order to get value change notifications, use the `Target-Action` pattern which is an inherent part of UIControl, like so:
 ``` swift
-circularSlider.addTarget(target: Any?, action: Selector, for: UIControl.valueChanged)
+/**
+    Add target/action for particular event.
+    - parameter target:     The object whose action method is called
+    - parameter action:     A selector identifying the action method to be called
+    - parameter Event:      The control-specific events for which the action method is called
+                            So far I've only implemented the following:
+                            
+                            UIControl.Event.valueChanged
+                            UIControl.Event.editingDidBegin
+                            UIControl.Event.editingDidEnd
+*/
+circularSlider.addTarget(target: Any?, action: Selector, for: UIControl.Event)
+
 ```
 
-To Control the text's appearance, use these:
+To Control the appearance of the label displaying the value, use these:
 ```swift
-open func setTextFont(named: String, textColor: UIColor, multiplier: CGFloat)
-open func setTextShadow(color: UIColor, opacity: Float = 1, offset: CGSize = CGSize(width: 1, height: 1), radius: CGFloat = 0)
+open func setLabelFont(named: String, textColor: UIColor, multiplier: CGFloat)
+open func setLabelShadow(color: UIColor, opacity: Float = 1, offset: CGSize = CGSize(width: 1, height: 1), radius: CGFloat = 0)
+```
+
+You can also specify the number of decimal places this label should show. 
+The default is 0.0 unless for example the value is within [0.0, 1.0]
+```swift
+@IBInspectable open var labelDecimalPlaces: Int = 0
+```
+If you need to override the text in the label, then just implement the following function inside the selector of the `Target-Action`
+method for the event `UIControl.Event.valueChanged`
+
+```swift
+open func setLabelText(_ text: String?)
 ```
 
 ## References

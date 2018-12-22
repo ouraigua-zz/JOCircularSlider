@@ -87,7 +87,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="6nV-kU-kJg">
                                 <rect key="frame" x="41.5" y="565" width="331" height="257"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.86000001430511475" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yng-5x-Nhy" customClass="DesignableSlider" customModule="JOCircularSlider_Example" customModuleProvider="target">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.85999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yng-5x-Nhy" customClass="DesignableSlider" customModule="JOCircularSlider_Example" customModuleProvider="target">
                                         <rect key="frame" x="-2" y="0.0" width="335" height="16"/>
                                         <color key="tintColor" red="0.20392156859999999" green="0.23529411759999999" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

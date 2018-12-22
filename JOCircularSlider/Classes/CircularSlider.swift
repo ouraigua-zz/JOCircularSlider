@@ -227,21 +227,24 @@ open class CircularSlider: UIControl {
         set { renderer.miniDotView.highlightColor = newValue ? highlightColor : nil }
     }
 
-    @IBInspectable open var minimumValue: CGFloat {
-        get { return CGFloat(renderer.minimumValue) }
+    /**
+        This value will be pinned to minimumValue/maximumValue
+        The default value of this property is 0.0.
+    */
+    @IBInspectable open var value: CGFloat {        // always min <= value <= max
+        get { return CGFloat(renderer.value) * (maximumValue - minimumValue) + minimumValue }
         set {
-            renderer.minimumValue = Float(newValue)
-            setValue(value, isPercentage: true)
+            guard maximumValue >= minimumValue else {
+                fatalError("`maximumValue` should be greater then `minimumValue`.")
+            }
+            let rangedValue = min(maximumValue, max(minimumValue, newValue))
+            renderer.value = Float((rangedValue - minimumValue) / (maximumValue - minimumValue))
         }
     }
 
-    @IBInspectable open var maximumValue: CGFloat {
-        get { return CGFloat(renderer.maximumValue) }
-        set {
-            renderer.maximumValue = Float(newValue)
-            setValue(value, isPercentage: true)
-        }
-    }
+    @IBInspectable open var minimumValue: CGFloat = 0
+
+    @IBInspectable open var maximumValue: CGFloat = 100
 
     @IBInspectable open var startAngle: CGFloat {
         get { return renderer.startAngle.toDegree }
@@ -263,29 +266,29 @@ open class CircularSlider: UIControl {
         set { renderer.isNegative = newValue }
     }
 
+    @IBInspectable open var labelDecimalPlaces: Int = 0
+
     // MARK: - Private Properties
 
     lazy private var renderer = Renderer(with: self)
     private var lastTouchAngle: CGFloat = 0
-    open private (set) var value: Float = 0      // 0 <= value <= 1
-
     private var centerPoint: CGPoint { return CGPoint(x: bounds.midX, y: bounds.midY) }
 
     // MARK: - Functions
 
     override public init(frame: CGRect) {
         super.init(frame: frame)
-        setValue(renderer.minimumValue)
+        value = minimumValue
     }
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setValue(renderer.minimumValue)
+        value = minimumValue
     }
 
     override open func layoutSubviews() {
         super.layoutSubviews()
-        renderer.update(bounds, value: value)
+        renderer.updateUI(in: bounds)
     }
 
     // MARK: - Touches
@@ -313,10 +316,9 @@ open class CircularSlider: UIControl {
 
         let angelDeltaAsPercentage = Float(angelDelta / angleRange)
         guard abs(angelDeltaAsPercentage) < 1 else { return }
-        let newValue  = isClockwise ? value + angelDeltaAsPercentage : value - angelDeltaAsPercentage
-        setValue(newValue, isPercentage: true)
+        let newValue = renderer.value + (isClockwise ? angelDeltaAsPercentage : -angelDeltaAsPercentage)
+        renderer.value = max(0, min(newValue, 1))
 
-        //sendActions(for: .valueChanged)
     }
 
     open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -326,36 +328,20 @@ open class CircularSlider: UIControl {
     
     // MARK: - Public
 
-    open func setValue(_ newValue: Float, isPercentage: Bool = false) {
-        guard maximumValue > minimumValue else {
-            fatalError("`maximumValue` should be greater then `minimumValue`.")
-        }
-
-        if isPercentage {
-            value = min(1, max(0, newValue))
-        } else {
-            // convert to percentage
-            let rangedValue = min(renderer.maximumValue, max(renderer.minimumValue, newValue))
-            value = (rangedValue - renderer.minimumValue) / (renderer.maximumValue - renderer.minimumValue)
-        }
-
-        // updates
-        renderer.updateText(with: value)
-        renderer.updatePointerView(in: bounds, value: value)
-        renderer.maxiDotView.updateColors(using: value)
-
-        sendActions(for: .valueChanged)
-    }
-
-    open func setTextFont(named: String, textColor: UIColor, multiplier: CGFloat) {
+    open func setLabelFont(named: String, textColor: UIColor, multiplier: CGFloat) {
         textFontSizeMultiplier = multiplier
         let textSize = bounds.height * multiplier
         renderer.setTextFont(named: named, textColor: textColor, textSize: textSize)
     }
 
-    open func setTextShadow(color: UIColor, opacity: Float = 1, offset: CGSize = CGSize(width: 1, height: 1), radius: CGFloat = 0) {
+    open func setLabelShadow(color: UIColor, opacity: Float = 1, offset: CGSize = CGSize(width: 1, height: 1), radius: CGFloat = 0) {
         renderer.setTextShadow(color: color, opacity: opacity, offset: offset, radius: radius)
     }
+
+    open func setLabelText(_ text: String?) {
+        renderer.textField.text = text
+    }
+
 }
 
 class Renderer {
@@ -401,9 +387,18 @@ class Renderer {
         }
     }
 
-    fileprivate var minimumValue: Float = 0.0
-    fileprivate var maximumValue: Float = 100.0
+    fileprivate var value: Float = 0.0 {      // 0 <= renderer.value <= 1
+        didSet {
+            // updates
+            updateText()
+            if let bounds = circularSlider?.bounds {
+                updatePointerView(in: bounds)
+            }
+            maxiDotView.updateColors(using: value)
 
+            circularSlider?.sendActions(for: .valueChanged)
+        }
+    }
 
     // MARK: - Init
 
@@ -412,8 +407,8 @@ class Renderer {
         commonInit()
     }
 
-    func update(_ bounds: CGRect, value: Float) {
-        updatePointerView(in: bounds, value: value)
+    func updateUI(in bounds: CGRect) {
+        updatePointerView(in: bounds)
         updateTextField(in: bounds)
         updateDotViews(in: bounds)
     }
@@ -492,13 +487,13 @@ private extension Renderer {
 
     @objc func keyboardDoneButtonTapped() {
         textField.endEditing(true)
-        guard let circularSlider = circularSlider else { return }
         guard let text = textField.text, let newValue = Int(text) else {
-            updateText(with: circularSlider.value, isPercentage: true)
+            updateText()
             return
         }
-        circularSlider.setValue(Float(newValue))
-        circularSlider.sendActions(for: .editingDidEnd)
+        circularSlider?.value = CGFloat(newValue)
+        circularSlider?.sendActions(for: .editingDidEnd)
+
         //maxiDotView.setNeedsLayout()
     }
 
@@ -529,23 +524,28 @@ private extension Renderer {
         textField.isHidden = textFieldIsHidden
     }
 
-    func updateText(with newValue: Float, isPercentage: Bool = true) {
-        var value = Int(newValue)
-        if isPercentage {
-            // convert value (0...1) to a value within proposed range
-            value = Int(newValue * (maximumValue - minimumValue) + minimumValue)
+    func updateText() {
+        guard let circularSlider = circularSlider else { return }
+
+        let minimum = Float(circularSlider.minimumValue)
+        let maximum = Float(circularSlider.maximumValue)
+        let _value = Float(circularSlider.value)
+
+        var decimalPlaces = circularSlider.labelDecimalPlaces
+        if value != 0 && _value.rounded(.towardZero) == 0 && decimalPlaces == 0 {
+            decimalPlaces = 2
         }
-        if isNegative {
-            value = Int(Float(value) - maximumValue)
-        }
-        switch value {
-        case Int(minimumValue): textField.text = "MIN"
-        case Int(maximumValue): textField.text = "MAX"
-        default: textField.text = "\(value)"
+
+        guard let newValue = Float(String(format: "%.\(decimalPlaces)f", _value)) else { return }
+
+        switch newValue {
+        case minimum: textField.text = "MIN"
+        case maximum: textField.text = "MAX"
+        default: textField.text = String(format: "%.\(decimalPlaces)f", newValue)
         }
     }
 
-    func updatePointerView(in bounds: CGRect, value: Float) {
+    func updatePointerView(in bounds: CGRect) {
 
         let angleRange = angleDifferenceInDegree(from: startAngle.toDegree, to: endAngle.toDegree, isClockwise: isClockwise)
         let angle = isClockwise ? startAngle.toDegree + (angleRange * CGFloat(value)) : startAngle.toDegree - (angleRange * CGFloat(value))
