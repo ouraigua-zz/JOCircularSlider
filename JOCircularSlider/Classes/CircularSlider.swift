@@ -261,11 +261,6 @@ open class CircularSlider: UIControl {
         set { renderer.isClockwise = newValue }
     }
 
-    @IBInspectable open var isNegative: Bool {
-        get { return renderer.isNegative }
-        set { renderer.isNegative = newValue }
-    }
-
     @IBInspectable open var labelDecimalPlaces: Int = 0
 
     // MARK: - Private Properties
@@ -360,11 +355,6 @@ class Renderer {
         didSet {
             miniDotView.isClockwise = isClockwise
             maxiDotView.isClockwise = isClockwise
-        }
-    }
-    fileprivate var isNegative: Bool = false {
-        didSet {
-
         }
     }
     fileprivate var textFieldIsHidden: Bool = false
