@@ -454,7 +454,7 @@ private extension Renderer {
         textField.layer.cornerRadius = 3
         textField.textAlignment = .center
         textField.text = ""
-        textField.keyboardType = .numberPad
+        textField.keyboardType = .numbersAndPunctuation
         textField.keyboardAppearance = .dark
         textField.clearsOnInsertion = true
         textField.adjustsFontSizeToFitWidth = true
@@ -526,7 +526,7 @@ private extension Renderer {
             decimalPlaces = 2
         }
 
-        guard let newValue = Float(String(format: "%.\(decimalPlaces)f", _value)) else { return }
+        let newValue = _value.roundedDown(toPlaces: decimalPlaces)
 
         switch newValue {
         case minimum: textField.text = "MIN"
