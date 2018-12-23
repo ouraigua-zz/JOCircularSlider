@@ -44,6 +44,8 @@ class KnobView: UIView {
         }
     }
 
+
+
     var shadowOpacity: Float = 0.4 {
         didSet {
             middleCircleShadow.shadowOpacity = shadowOpacity
