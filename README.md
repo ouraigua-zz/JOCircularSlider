@@ -35,6 +35,12 @@ it, simply add the following line to your Podfile:
 pod 'JOCircularSlider'
 ```
 
+JOCircularSlider is also available through [Carthage](https://github.com/Carthage/Carthage). To install it, simply add the following line to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile):
+
+``` ruby
+github "ouraigua/JOCircularSlider"
+```
+
 ## Usage
 1. Visually:
 
