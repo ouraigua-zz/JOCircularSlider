@@ -73,7 +73,7 @@ open class CircularSlider: UIControl {
             renderer.knobView.highlightColor = newValue
             renderer.maxiDotView.highlightColor = newValue
             renderer.miniDotView.highlightColor = newValue
-            renderer.textField.layer.shadowColor = newValue.cgColor
+            renderer.label.layer.shadowColor = newValue.cgColor
             renderer.setTextShadow(color: newValue, opacity: 1, offset: CGSize(width: 0.5, height: 0.5), radius: 0)
         }
     }
@@ -135,8 +135,8 @@ open class CircularSlider: UIControl {
     }
 
     @IBInspectable open var textColor: UIColor {
-        get { return renderer.textField.textColor! }
-        set { renderer.textField.textColor = newValue}
+        get { return renderer.label.textColor! }
+        set { renderer.label.textColor = newValue}
     }
 
     @IBInspectable open var maxidotViewIsHidden: Bool {
@@ -334,7 +334,7 @@ open class CircularSlider: UIControl {
     }
 
     open func setLabelText(_ text: String?) {
-        renderer.textField.text = text
+        renderer.label.text = text
     }
 
 }
@@ -347,7 +347,7 @@ class Renderer {
 
     fileprivate let knobView = KnobView(frame: .zero)
     fileprivate let pointerView = PointerView(frame: .zero)
-    fileprivate let textField = UITextField()
+    fileprivate let label = UILabel()
     fileprivate var miniDotView: DotView!
     fileprivate var maxiDotView: DotView!
 
@@ -404,12 +404,12 @@ class Renderer {
     }
 
     func setTextFont(named: String, textColor: UIColor, textSize: CGFloat) {
-        textField.textColor = textColor
-        textField.font = UIFont(name: named, size: textSize) ?? UIFont.systemFont(ofSize: textSize)
+        label.textColor = textColor
+        label.font = UIFont(name: named, size: textSize) ?? UIFont.systemFont(ofSize: textSize)
     }
 
     func setTextShadow(color: UIColor, opacity: Float = 1, offset: CGSize = CGSize(width: 1, height: 1), radius: CGFloat = 0) {
-        textField.layer.setShadow(color: color, opacity: opacity, offset: offset, radius: radius)
+        label.layer.setShadow(color: color, opacity: opacity, offset: offset, radius: radius)
     }
 }
 
@@ -437,34 +437,16 @@ private extension Renderer {
         circularSlider?.addSubview(pointerView)
     }
 
-    func addInputAccessoryView() {
-        let width = UIScreen.main.bounds.width
-        let toolBar = UIToolbar(frame: CGRect(origin: .zero, size: CGSize(width: width, height: 48)))
-        toolBar.barStyle = .blackTranslucent
-        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let done = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(keyboardDoneButtonTapped))
-        done.tintColor = .lightGray
-        toolBar.items = [done, flexibleSpace]
-        toolBar.sizeToFit()
-        textField.inputAccessoryView = toolBar
-    }
-
     func addTextField() {
-        textField.backgroundColor = .clear
-        textField.layer.cornerRadius = 3
-        textField.textAlignment = .center
-        textField.text = ""
-        textField.keyboardType = .numbersAndPunctuation
-        textField.keyboardAppearance = .dark
-        textField.clearsOnInsertion = true
-        textField.adjustsFontSizeToFitWidth = true
+        label.backgroundColor = .clear
+        label.layer.cornerRadius = 3
+        label.textAlignment = .center
+        label.text = ""
         if let height = circularSlider?.bounds.height {
             setTextFont(named: Constants.fontName, textColor: Constants.lightTextColor, textSize: height * fontSizeMultiplier)
         }
         setTextShadow(color: .white)
-
-        addInputAccessoryView()
-        circularSlider?.addSubview(textField)
+        circularSlider?.addSubview(label)
     }
 
     func addDotViews() {
@@ -476,8 +458,8 @@ private extension Renderer {
     }
 
     @objc func keyboardDoneButtonTapped() {
-        textField.endEditing(true)
-        guard let text = textField.text, let newValue = Int(text) else {
+        label.endEditing(true)
+        guard let text = label.text, let newValue = Int(text) else {
             updateText()
             return
         }
@@ -506,12 +488,12 @@ private extension Renderer {
         let height = (bounds.height * knobView.innerCircleMultiplier) * multiplier
         let x = (bounds.width - width)/2
         let y = (bounds.height - height)/2
-        textField.frame = CGRect(x: x, y: y, width: width, height: height)
+        label.frame = CGRect(x: x, y: y, width: width, height: height)
 
-        let name = textField.font?.fontName ?? Constants.fontName
-        textField.font = UIFont(name: name, size: textField.frame.height)
+        let name = label.font?.fontName ?? Constants.fontName
+        label.font = UIFont(name: name, size: label.frame.height)
 
-        textField.isHidden = textFieldIsHidden
+        label.isHidden = textFieldIsHidden
     }
 
     func updateText() {
@@ -529,9 +511,9 @@ private extension Renderer {
         let newValue = _value.roundedDown(toPlaces: decimalPlaces)
 
         switch newValue {
-        case minimum: textField.text = "MIN"
-        case maximum: textField.text = "MAX"
-        default: textField.text = String(format: "%.\(decimalPlaces)f", newValue)
+        case minimum: label.text = "MIN"
+        case maximum: label.text = "MAX"
+        default: label.text = String(format: "%.\(decimalPlaces)f", newValue)
         }
     }
 

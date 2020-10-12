@@ -7,281 +7,297 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05279D8CE1F1200AF957EDAC29D6F2F0 /* KnobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A3FD0CC1B7D9E0BC547BC230F9BCE /* KnobView.swift */; };
-		12F27053D39728CFA923CB46C4ECDD21 /* PointerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA7BDFDFE92FF13BCA7E6C520F4628 /* PointerView.swift */; };
-		5F060F7FB32A05BAAA29A6D9263F01BB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5B9FA356380E516F8C5DA28858D85 /* Extensions.swift */; };
-		70C9290B98764939359E0FC4B75197F1 /* Pods-JOCircularSlider_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F719442F9F6484D94F9C11FB07019FA5 /* Pods-JOCircularSlider_Tests-dummy.m */; };
-		743D8A879B30AAEFBBCB6285698E2614 /* DotLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EB77F310C9DD1D4B68D5E9719070E7 /* DotLayer.swift */; };
-		7953267214D5FC12A34450E2A68B5177 /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF121A7E8B96A380A1C158963589A5 /* DotView.swift */; };
-		7C8197BF929C08A3EC1761C1E64270DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		A17D44DFB87DEA280B732B3AF8D967E0 /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF3E813FBB60B991AF8ABF1D99DD35 /* CircularSlider.swift */; };
-		A4822B41F3CCAE0023F3BC499CC78066 /* JOCircularSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 055DFF7240BFA1CF7B6BFA2A1427C4D4 /* JOCircularSlider-dummy.m */; };
-		ACB71E6A3AFBE042C67CF169038C8341 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		B930EA630FA25D9AAFDC53F1D2F851D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		CB45827B6C728467E5C29C39C03FBAB3 /* JOCircularSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D98CC1F161EEF23C0C49EA41ED8C191 /* JOCircularSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFC8DE54B07613BEBD7B506B9BAA2F56 /* Pods-JOCircularSlider_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E978690BA7F3A1FC063D21006B9263FD /* Pods-JOCircularSlider_Example-dummy.m */; };
-		E65586D08045B4A249760F13B8FC4A0D /* Pods-JOCircularSlider_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F52F7FA7AD9981D90CC3A57A289F6E2F /* Pods-JOCircularSlider_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F279B10D81426CDA2B4D20F24DAD4C39 /* CircularLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABF840DE693C1FBC775A4DCFC86827E /* CircularLayer.swift */; };
-		FF15E7C2DF301C3E08B9B0396E91CDB5 /* Pods-JOCircularSlider_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB054C7D8F8E482A293368177141F5C /* Pods-JOCircularSlider_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		076A6F5C241022FC71D8DBD4138B935F /* CircularLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240E226E8A6E377533D8ED657D97111A /* CircularLayer.swift */; };
+		1C5A08738A89F8A418C292765D2B7955 /* Pods-JOCircularSlider_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C2D64EE4A9A1DB0962C4C53A0FA7C7 /* Pods-JOCircularSlider_Example-dummy.m */; };
+		20D81EFDF8410A945F1DFD850C70950E /* Pods-JOCircularSlider_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5986A4F75D7743971EBFEE5510AE2850 /* Pods-JOCircularSlider_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CD9A8FF768CC4B8BA3D398B42C5DBA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4311CE5743C492E188A907CD716FEE7D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57674ED543A51C199F355A64B3734B1 /* Extensions.swift */; };
+		48BF066848B178D38B1D77B1CE03CE74 /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265E738A2487AFAEC658F0C26C03A15 /* CircularSlider.swift */; };
+		533CFA7A6D635CE361362CDE1CB476AB /* Pods-JOCircularSlider_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C79AD0B1C823B2EEDF25E380A51374ED /* Pods-JOCircularSlider_Tests-dummy.m */; };
+		69A6F6E98FF5EA53D910AFFB27297940 /* Pods-JOCircularSlider_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C714734D85606EE2AD25265819E0DF3 /* Pods-JOCircularSlider_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EE657E2DA64147AF6D6F3C6EDD45CFD /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE56F649DCEA6F56BEAD8F9002859A /* DotView.swift */; };
+		78652156A6F1C0DA05351138135C515B /* PointerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE363510D8A80E8A759F030ABF026AA /* PointerView.swift */; };
+		8EACD401595A672CD6FBDC7BF4EF31A7 /* JOCircularSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E45775BF1F2AB5EBCAC28542912CF0 /* JOCircularSlider-dummy.m */; };
+		B17D71117A61F19AE40B25FC790376DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		CB85F9E723AFE97A344010F87CD24107 /* KnobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653470F89960643DDEDB962A39FCA04 /* KnobView.swift */; };
+		D4020E4C33F85AEE7B8D37EDE62A9EC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		DF82F2F8C60879AEE9360E14C7FBE514 /* JOCircularSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DAD11FCD24824C5313D984BDF6AF61FA /* JOCircularSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE6DD2EDBBDD99FC174B8E6E129C0577 /* DotLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E814E1F01EC2A54B30DA45862D45CD /* DotLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		64AF03836747A4595A8A59D132A87385 /* PBXContainerItemProxy */ = {
+		095EACC3FC28EF6F73340073AAEEAAEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2CCB4C791632458AF59683CD557BD517;
-			remoteInfo = "Pods-JOCircularSlider_Example";
-		};
-		F083CA64179BB8A399A7B71A4098997E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2A42614483C3321D5589EF03C68BD21C;
+			remoteGlobalIDString = 5D6BEF85A40B5F6295BAFB990665F82C;
 			remoteInfo = JOCircularSlider;
+		};
+		8B070B79D7C75FCB2DD559C44F3ACD5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 183CB84C6E2B895C955348B8CFBBCCD9;
+			remoteInfo = "Pods-JOCircularSlider_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		055DFF7240BFA1CF7B6BFA2A1427C4D4 /* JOCircularSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JOCircularSlider-dummy.m"; sourceTree = "<group>"; };
-		10C941578DAC675B26E7D2BE977A3187 /* JOCircularSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JOCircularSlider.modulemap; sourceTree = "<group>"; };
-		1126813A0A31B8C635191994BFDAFD80 /* Pods-JOCircularSlider_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JOCircularSlider_Tests-resources.sh"; sourceTree = "<group>"; };
-		124E6E7F2F3AC1E2DDF655812490755D /* Pods-JOCircularSlider_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JOCircularSlider_Example-resources.sh"; sourceTree = "<group>"; };
-		1D98CC1F161EEF23C0C49EA41ED8C191 /* JOCircularSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JOCircularSlider-umbrella.h"; sourceTree = "<group>"; };
-		1E344923A86DC0A81E4C07BA034CE2B9 /* Pods-JOCircularSlider_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JOCircularSlider_Example.modulemap"; sourceTree = "<group>"; };
-		1EA3738B9F6FC9D9E9CC53A89218FFE6 /* JOCircularSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JOCircularSlider.xcconfig; sourceTree = "<group>"; };
-		283DBFF0217F9074FA271B49C04EDDF3 /* JOCircularSlider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = JOCircularSlider.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2AB054C7D8F8E482A293368177141F5C /* Pods-JOCircularSlider_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JOCircularSlider_Tests-umbrella.h"; sourceTree = "<group>"; };
-		2CC40B710FDDCFE776554B242E171266 /* Pods-JOCircularSlider_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JOCircularSlider_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		37EEED168D1A7F6AEE096BF5C17E3C6A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3ABF840DE693C1FBC775A4DCFC86827E /* CircularLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircularLayer.swift; path = JOCircularSlider/Classes/CircularLayer.swift; sourceTree = "<group>"; };
-		4611DEA40CAF8910AA63CAF3BF498841 /* Pods-JOCircularSlider_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JOCircularSlider_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		48B7A11B996C1E189AF86519B5CDCFDA /* Pods-JOCircularSlider_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JOCircularSlider_Example.release.xcconfig"; sourceTree = "<group>"; };
-		49DF3E813FBB60B991AF8ABF1D99DD35 /* CircularSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircularSlider.swift; path = JOCircularSlider/Classes/CircularSlider.swift; sourceTree = "<group>"; };
-		4A951E0E3020FE53E3B5AEA471243508 /* Pods-JOCircularSlider_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JOCircularSlider_Example-frameworks.sh"; sourceTree = "<group>"; };
-		50063FA42B13C6AC7E285EF6E17B8455 /* JOCircularSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JOCircularSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		511A3FD0CC1B7D9E0BC547BC230F9BCE /* KnobView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KnobView.swift; path = JOCircularSlider/Classes/KnobView.swift; sourceTree = "<group>"; };
-		55DFD8118B05FC8521CB7DF57B0746D4 /* Pods-JOCircularSlider_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JOCircularSlider_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		568AF9D0143ECC981BB843BAD3BC112B /* Pods-JOCircularSlider_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JOCircularSlider_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5AA090443210B9C2074BBFAD0869AEFB /* Pods_JOCircularSlider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JOCircularSlider_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7164A283EBCA7EE531EE222B97526C3F /* Pods-JOCircularSlider_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JOCircularSlider_Tests.modulemap"; sourceTree = "<group>"; };
-		7673E2270A3C81C4B151CF5D1874537F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BFFA5FCAE14A56F30463F7B0E68640E /* Pods-JOCircularSlider_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JOCircularSlider_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		8B7D9647D18079672F29FB498A56A9A6 /* Pods-JOCircularSlider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JOCircularSlider_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8D5270DA20CB96F2275E1E0914FF954D /* Pods_JOCircularSlider_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JOCircularSlider_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DDA7BDFDFE92FF13BCA7E6C520F4628 /* PointerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PointerView.swift; path = JOCircularSlider/Classes/PointerView.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A96DA4DDC2B4AC7D9A99ED654664BC6D /* Pods-JOCircularSlider_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JOCircularSlider_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		ACF26235D8F9ADBEB158E39410E4FE4D /* Pods-JOCircularSlider_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JOCircularSlider_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BCF5B9FA356380E516F8C5DA28858D85 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = JOCircularSlider/Classes/Extensions.swift; sourceTree = "<group>"; };
-		CAAF121A7E8B96A380A1C158963589A5 /* DotView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotView.swift; path = JOCircularSlider/Classes/DotView.swift; sourceTree = "<group>"; };
-		CD21EC5BAE764CEDD8D583720BBACC72 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1CCB62F96EF4B239F67139B8A637494 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E978690BA7F3A1FC063D21006B9263FD /* Pods-JOCircularSlider_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JOCircularSlider_Example-dummy.m"; sourceTree = "<group>"; };
-		EDF93F568BFA660B4285D25E97969A33 /* JOCircularSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JOCircularSlider-prefix.pch"; sourceTree = "<group>"; };
-		F1EB77F310C9DD1D4B68D5E9719070E7 /* DotLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotLayer.swift; path = JOCircularSlider/Classes/DotLayer.swift; sourceTree = "<group>"; };
-		F2DC93DA42DEA05746E0269A192A8073 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		F52F7FA7AD9981D90CC3A57A289F6E2F /* Pods-JOCircularSlider_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JOCircularSlider_Example-umbrella.h"; sourceTree = "<group>"; };
-		F719442F9F6484D94F9C11FB07019FA5 /* Pods-JOCircularSlider_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JOCircularSlider_Tests-dummy.m"; sourceTree = "<group>"; };
+		0B5324DB8D8EA61C5CFA0B424BB1142A /* Pods-JOCircularSlider_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JOCircularSlider_Example.release.xcconfig"; sourceTree = "<group>"; };
+		19EE31D6D36D0D2380A88F020A22F5EE /* Pods-JOCircularSlider_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JOCircularSlider_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1C714734D85606EE2AD25265819E0DF3 /* Pods-JOCircularSlider_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JOCircularSlider_Tests-umbrella.h"; sourceTree = "<group>"; };
+		21564D0D52464E397ABA0D2D31D6138F /* Pods-JOCircularSlider_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JOCircularSlider_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		240E226E8A6E377533D8ED657D97111A /* CircularLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircularLayer.swift; path = JOCircularSlider/Classes/CircularLayer.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		36F46138760FA5D9013D54869E06B1B5 /* JOCircularSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JOCircularSlider.modulemap; sourceTree = "<group>"; };
+		3DA0F77378FFA7A082424DA7370FDBF9 /* JOCircularSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JOCircularSlider-Info.plist"; sourceTree = "<group>"; };
+		3DA3DE7F66251A4AD28E5B2A2C7EDA32 /* Pods-JOCircularSlider_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JOCircularSlider_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		436ABE8DA21D92546F539CD3E116D35A /* Pods-JOCircularSlider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JOCircularSlider_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		502A33D3ED684B363B286A881D36BB5C /* JOCircularSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JOCircularSlider.debug.xcconfig; sourceTree = "<group>"; };
+		56C2D64EE4A9A1DB0962C4C53A0FA7C7 /* Pods-JOCircularSlider_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JOCircularSlider_Example-dummy.m"; sourceTree = "<group>"; };
+		58EA32E7FEB47E5799D50F00956651F2 /* Pods-JOCircularSlider_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JOCircularSlider_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5986A4F75D7743971EBFEE5510AE2850 /* Pods-JOCircularSlider_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JOCircularSlider_Example-umbrella.h"; sourceTree = "<group>"; };
+		5DAD159B8D9E4E595CF2B3877BBC7B29 /* Pods-JOCircularSlider_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JOCircularSlider_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		63629DEC58752CF9536F0264A8CB32EA /* Pods-JOCircularSlider_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JOCircularSlider_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		697492C6C0BEF4BEDA310BCF23370E7E /* Pods-JOCircularSlider_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JOCircularSlider_Example.modulemap"; sourceTree = "<group>"; };
+		7FFCBC5D17369F02B13DAFF3D208C3D9 /* Pods-JOCircularSlider_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JOCircularSlider_Tests-Info.plist"; sourceTree = "<group>"; };
+		802CA4266D0F38A63F5BA656271D5574 /* JOCircularSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JOCircularSlider-prefix.pch"; sourceTree = "<group>"; };
+		8BAE56F649DCEA6F56BEAD8F9002859A /* DotView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotView.swift; path = JOCircularSlider/Classes/DotView.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E4B76D0E6538F96D291A4FA1A630A87 /* Pods_JOCircularSlider_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JOCircularSlider_Tests.framework; path = "Pods-JOCircularSlider_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9F748AD229C57874283EE50F174F8E /* Pods-JOCircularSlider_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JOCircularSlider_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B57674ED543A51C199F355A64B3734B1 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = JOCircularSlider/Classes/Extensions.swift; sourceTree = "<group>"; };
+		B74A33433D132D02D145BFAB43A09C44 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B91CD6C295CA97CEFAA4AD20F22F354B /* JOCircularSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JOCircularSlider.framework; path = JOCircularSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E814E1F01EC2A54B30DA45862D45CD /* DotLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotLayer.swift; path = JOCircularSlider/Classes/DotLayer.swift; sourceTree = "<group>"; };
+		C653470F89960643DDEDB962A39FCA04 /* KnobView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KnobView.swift; path = JOCircularSlider/Classes/KnobView.swift; sourceTree = "<group>"; };
+		C79AD0B1C823B2EEDF25E380A51374ED /* Pods-JOCircularSlider_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JOCircularSlider_Tests-dummy.m"; sourceTree = "<group>"; };
+		C7BFC2ACC25734BA685D8841C7403DA6 /* JOCircularSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JOCircularSlider.release.xcconfig; sourceTree = "<group>"; };
+		D265E738A2487AFAEC658F0C26C03A15 /* CircularSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircularSlider.swift; path = JOCircularSlider/Classes/CircularSlider.swift; sourceTree = "<group>"; };
+		D41103D3D04488C472F7D36992F5CD3C /* JOCircularSlider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JOCircularSlider.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D4E45775BF1F2AB5EBCAC28542912CF0 /* JOCircularSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JOCircularSlider-dummy.m"; sourceTree = "<group>"; };
+		DAD11FCD24824C5313D984BDF6AF61FA /* JOCircularSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JOCircularSlider-umbrella.h"; sourceTree = "<group>"; };
+		E8C3A98F4E3B1C7A1913B63A114F73F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		EA79648F9C4118A9F5C0C07D630CD383 /* Pods-JOCircularSlider_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JOCircularSlider_Tests.modulemap"; sourceTree = "<group>"; };
+		ECE363510D8A80E8A759F030ABF026AA /* PointerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PointerView.swift; path = JOCircularSlider/Classes/PointerView.swift; sourceTree = "<group>"; };
+		F686CA4AB5F874A0872010854210D7A6 /* Pods-JOCircularSlider_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JOCircularSlider_Example-Info.plist"; sourceTree = "<group>"; };
+		F8772F284BC42DB63BFC81E98DE0CFEC /* Pods_JOCircularSlider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JOCircularSlider_Example.framework; path = "Pods-JOCircularSlider_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7438E9CF5852506D4AE664BC9EA185EB /* Frameworks */ = {
+		382BFB07AEAD456952F0B04574A7C424 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACB71E6A3AFBE042C67CF169038C8341 /* Foundation.framework in Frameworks */,
+				B17D71117A61F19AE40B25FC790376DA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B028D2FBBA4864D4BFBB93B13F6964B1 /* Frameworks */ = {
+		59EB1522A7A60D4BD87BC1C66F7E295D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C8197BF929C08A3EC1761C1E64270DA /* Foundation.framework in Frameworks */,
+				3CD9A8FF768CC4B8BA3D398B42C5DBA6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C649589484C807AFB3C599769C2E2627 /* Frameworks */ = {
+		D0E917382D549C57C564B7F108BC43EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B930EA630FA25D9AAFDC53F1D2F851D7 /* Foundation.framework in Frameworks */,
+				D4020E4C33F85AEE7B8D37EDE62A9EC8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B9331F372F863CC19437A93A047FABD /* Pods-JOCircularSlider_Tests */ = {
+		0C2CCC3F1EAD120B0A37D71AE767D7F6 /* Pods-JOCircularSlider_Example */ = {
 			isa = PBXGroup;
 			children = (
-				CD21EC5BAE764CEDD8D583720BBACC72 /* Info.plist */,
-				7164A283EBCA7EE531EE222B97526C3F /* Pods-JOCircularSlider_Tests.modulemap */,
-				4611DEA40CAF8910AA63CAF3BF498841 /* Pods-JOCircularSlider_Tests-acknowledgements.markdown */,
-				568AF9D0143ECC981BB843BAD3BC112B /* Pods-JOCircularSlider_Tests-acknowledgements.plist */,
-				F719442F9F6484D94F9C11FB07019FA5 /* Pods-JOCircularSlider_Tests-dummy.m */,
-				7BFFA5FCAE14A56F30463F7B0E68640E /* Pods-JOCircularSlider_Tests-frameworks.sh */,
-				1126813A0A31B8C635191994BFDAFD80 /* Pods-JOCircularSlider_Tests-resources.sh */,
-				2AB054C7D8F8E482A293368177141F5C /* Pods-JOCircularSlider_Tests-umbrella.h */,
-				ACF26235D8F9ADBEB158E39410E4FE4D /* Pods-JOCircularSlider_Tests.debug.xcconfig */,
-				2CC40B710FDDCFE776554B242E171266 /* Pods-JOCircularSlider_Tests.release.xcconfig */,
-			);
-			name = "Pods-JOCircularSlider_Tests";
-			path = "Target Support Files/Pods-JOCircularSlider_Tests";
-			sourceTree = "<group>";
-		};
-		3FE78CE3B16ADBAC28765962CA8665D9 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CAFE5E995F49941BFC8AF0146DBA24E6 /* JOCircularSlider */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				3FE78CE3B16ADBAC28765962CA8665D9 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				EA8D4B3B5FEB73B4671BCF5A2FB85670 /* Products */,
-				B8E87721827A3E21EF0B3D27C948B92D /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		B0A7FBD2E2F11ED5BDE8DE07C0FCEB24 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E1CCB62F96EF4B239F67139B8A637494 /* Info.plist */,
-				10C941578DAC675B26E7D2BE977A3187 /* JOCircularSlider.modulemap */,
-				1EA3738B9F6FC9D9E9CC53A89218FFE6 /* JOCircularSlider.xcconfig */,
-				055DFF7240BFA1CF7B6BFA2A1427C4D4 /* JOCircularSlider-dummy.m */,
-				EDF93F568BFA660B4285D25E97969A33 /* JOCircularSlider-prefix.pch */,
-				1D98CC1F161EEF23C0C49EA41ED8C191 /* JOCircularSlider-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/JOCircularSlider";
-			sourceTree = "<group>";
-		};
-		B8E87721827A3E21EF0B3D27C948B92D /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CE3DB4C740DB3F63ABEF4002FD93E4A1 /* Pods-JOCircularSlider_Example */,
-				2B9331F372F863CC19437A93A047FABD /* Pods-JOCircularSlider_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CAFE5E995F49941BFC8AF0146DBA24E6 /* JOCircularSlider */ = {
-			isa = PBXGroup;
-			children = (
-				49DF3E813FBB60B991AF8ABF1D99DD35 /* CircularSlider.swift */,
-				3ABF840DE693C1FBC775A4DCFC86827E /* CircularLayer.swift */,
-				F1EB77F310C9DD1D4B68D5E9719070E7 /* DotLayer.swift */,
-				CAAF121A7E8B96A380A1C158963589A5 /* DotView.swift */,
-				BCF5B9FA356380E516F8C5DA28858D85 /* Extensions.swift */,
-				511A3FD0CC1B7D9E0BC547BC230F9BCE /* KnobView.swift */,
-				8DDA7BDFDFE92FF13BCA7E6C520F4628 /* PointerView.swift */,
-				CE9DED3ED126B070304870EE7BEA6C69 /* Pod */,
-				B0A7FBD2E2F11ED5BDE8DE07C0FCEB24 /* Support Files */,
-			);
-			name = JOCircularSlider;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		CE3DB4C740DB3F63ABEF4002FD93E4A1 /* Pods-JOCircularSlider_Example */ = {
-			isa = PBXGroup;
-			children = (
-				7673E2270A3C81C4B151CF5D1874537F /* Info.plist */,
-				1E344923A86DC0A81E4C07BA034CE2B9 /* Pods-JOCircularSlider_Example.modulemap */,
-				A96DA4DDC2B4AC7D9A99ED654664BC6D /* Pods-JOCircularSlider_Example-acknowledgements.markdown */,
-				55DFD8118B05FC8521CB7DF57B0746D4 /* Pods-JOCircularSlider_Example-acknowledgements.plist */,
-				E978690BA7F3A1FC063D21006B9263FD /* Pods-JOCircularSlider_Example-dummy.m */,
-				4A951E0E3020FE53E3B5AEA471243508 /* Pods-JOCircularSlider_Example-frameworks.sh */,
-				124E6E7F2F3AC1E2DDF655812490755D /* Pods-JOCircularSlider_Example-resources.sh */,
-				F52F7FA7AD9981D90CC3A57A289F6E2F /* Pods-JOCircularSlider_Example-umbrella.h */,
-				8B7D9647D18079672F29FB498A56A9A6 /* Pods-JOCircularSlider_Example.debug.xcconfig */,
-				48B7A11B996C1E189AF86519B5CDCFDA /* Pods-JOCircularSlider_Example.release.xcconfig */,
+				697492C6C0BEF4BEDA310BCF23370E7E /* Pods-JOCircularSlider_Example.modulemap */,
+				3DA3DE7F66251A4AD28E5B2A2C7EDA32 /* Pods-JOCircularSlider_Example-acknowledgements.markdown */,
+				63629DEC58752CF9536F0264A8CB32EA /* Pods-JOCircularSlider_Example-acknowledgements.plist */,
+				56C2D64EE4A9A1DB0962C4C53A0FA7C7 /* Pods-JOCircularSlider_Example-dummy.m */,
+				19EE31D6D36D0D2380A88F020A22F5EE /* Pods-JOCircularSlider_Example-frameworks.sh */,
+				F686CA4AB5F874A0872010854210D7A6 /* Pods-JOCircularSlider_Example-Info.plist */,
+				5986A4F75D7743971EBFEE5510AE2850 /* Pods-JOCircularSlider_Example-umbrella.h */,
+				436ABE8DA21D92546F539CD3E116D35A /* Pods-JOCircularSlider_Example.debug.xcconfig */,
+				0B5324DB8D8EA61C5CFA0B424BB1142A /* Pods-JOCircularSlider_Example.release.xcconfig */,
 			);
 			name = "Pods-JOCircularSlider_Example";
 			path = "Target Support Files/Pods-JOCircularSlider_Example";
 			sourceTree = "<group>";
 		};
-		CE9DED3ED126B070304870EE7BEA6C69 /* Pod */ = {
+		1C0D666E4014773B5A8A3BF86250EB69 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				283DBFF0217F9074FA271B49C04EDDF3 /* JOCircularSlider.podspec */,
-				F2DC93DA42DEA05746E0269A192A8073 /* LICENSE */,
-				37EEED168D1A7F6AEE096BF5C17E3C6A /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		EA8D4B3B5FEB73B4671BCF5A2FB85670 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				50063FA42B13C6AC7E285EF6E17B8455 /* JOCircularSlider.framework */,
-				5AA090443210B9C2074BBFAD0869AEFB /* Pods_JOCircularSlider_Example.framework */,
-				8D5270DA20CB96F2275E1E0914FF954D /* Pods_JOCircularSlider_Tests.framework */,
+				B91CD6C295CA97CEFAA4AD20F22F354B /* JOCircularSlider.framework */,
+				F8772F284BC42DB63BFC81E98DE0CFEC /* Pods_JOCircularSlider_Example.framework */,
+				9E4B76D0E6538F96D291A4FA1A630A87 /* Pods_JOCircularSlider_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		613FD6727DCC45E5582380B60B7FEE65 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				36F46138760FA5D9013D54869E06B1B5 /* JOCircularSlider.modulemap */,
+				D4E45775BF1F2AB5EBCAC28542912CF0 /* JOCircularSlider-dummy.m */,
+				3DA0F77378FFA7A082424DA7370FDBF9 /* JOCircularSlider-Info.plist */,
+				802CA4266D0F38A63F5BA656271D5574 /* JOCircularSlider-prefix.pch */,
+				DAD11FCD24824C5313D984BDF6AF61FA /* JOCircularSlider-umbrella.h */,
+				502A33D3ED684B363B286A881D36BB5C /* JOCircularSlider.debug.xcconfig */,
+				C7BFC2ACC25734BA685D8841C7403DA6 /* JOCircularSlider.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JOCircularSlider";
+			sourceTree = "<group>";
+		};
+		6860D758BE87287E3E7C1BD7ADC16739 /* Pods-JOCircularSlider_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EA79648F9C4118A9F5C0C07D630CD383 /* Pods-JOCircularSlider_Tests.modulemap */,
+				21564D0D52464E397ABA0D2D31D6138F /* Pods-JOCircularSlider_Tests-acknowledgements.markdown */,
+				58EA32E7FEB47E5799D50F00956651F2 /* Pods-JOCircularSlider_Tests-acknowledgements.plist */,
+				C79AD0B1C823B2EEDF25E380A51374ED /* Pods-JOCircularSlider_Tests-dummy.m */,
+				7FFCBC5D17369F02B13DAFF3D208C3D9 /* Pods-JOCircularSlider_Tests-Info.plist */,
+				1C714734D85606EE2AD25265819E0DF3 /* Pods-JOCircularSlider_Tests-umbrella.h */,
+				AD9F748AD229C57874283EE50F174F8E /* Pods-JOCircularSlider_Tests.debug.xcconfig */,
+				5DAD159B8D9E4E595CF2B3877BBC7B29 /* Pods-JOCircularSlider_Tests.release.xcconfig */,
+			);
+			name = "Pods-JOCircularSlider_Tests";
+			path = "Target Support Files/Pods-JOCircularSlider_Tests";
+			sourceTree = "<group>";
+		};
+		8ABA31E21F720A64BFA4CA382E8E0C07 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3CD11A911B0D778FD3DEFDCF9AB22C4 /* JOCircularSlider */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		91DDCE28BCF95986DE9E7084BF6938F1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C2CCC3F1EAD120B0A37D71AE767D7F6 /* Pods-JOCircularSlider_Example */,
+				6860D758BE87287E3E7C1BD7ADC16739 /* Pods-JOCircularSlider_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B3CD11A911B0D778FD3DEFDCF9AB22C4 /* JOCircularSlider */ = {
+			isa = PBXGroup;
+			children = (
+				240E226E8A6E377533D8ED657D97111A /* CircularLayer.swift */,
+				D265E738A2487AFAEC658F0C26C03A15 /* CircularSlider.swift */,
+				C3E814E1F01EC2A54B30DA45862D45CD /* DotLayer.swift */,
+				8BAE56F649DCEA6F56BEAD8F9002859A /* DotView.swift */,
+				B57674ED543A51C199F355A64B3734B1 /* Extensions.swift */,
+				C653470F89960643DDEDB962A39FCA04 /* KnobView.swift */,
+				ECE363510D8A80E8A759F030ABF026AA /* PointerView.swift */,
+				DD42A02CA512FAB826C74B16B96F4F2B /* Pod */,
+				613FD6727DCC45E5582380B60B7FEE65 /* Support Files */,
+			);
+			name = JOCircularSlider;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8ABA31E21F720A64BFA4CA382E8E0C07 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1C0D666E4014773B5A8A3BF86250EB69 /* Products */,
+				91DDCE28BCF95986DE9E7084BF6938F1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD42A02CA512FAB826C74B16B96F4F2B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D41103D3D04488C472F7D36992F5CD3C /* JOCircularSlider.podspec */,
+				E8C3A98F4E3B1C7A1913B63A114F73F4 /* LICENSE */,
+				B74A33433D132D02D145BFAB43A09C44 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		63821404BE470CE586DA340F28804187 /* Headers */ = {
+		0FD21E68D8BB0B240B93DC36B3B4C764 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E65586D08045B4A249760F13B8FC4A0D /* Pods-JOCircularSlider_Example-umbrella.h in Headers */,
+				69A6F6E98FF5EA53D910AFFB27297940 /* Pods-JOCircularSlider_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F011FBC5D8948E768570BFC9905CD4D9 /* Headers */ = {
+		50527E77FE14AF7134C36F3E975CAC1C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB45827B6C728467E5C29C39C03FBAB3 /* JOCircularSlider-umbrella.h in Headers */,
+				DF82F2F8C60879AEE9360E14C7FBE514 /* JOCircularSlider-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0D5589F6BFB898C240D78ABD1ACDFA6 /* Headers */ = {
+		7C8FA8F7749FCED29A7D276945504DAE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF15E7C2DF301C3E08B9B0396E91CDB5 /* Pods-JOCircularSlider_Tests-umbrella.h in Headers */,
+				20D81EFDF8410A945F1DFD850C70950E /* Pods-JOCircularSlider_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2A42614483C3321D5589EF03C68BD21C /* JOCircularSlider */ = {
+		183CB84C6E2B895C955348B8CFBBCCD9 /* Pods-JOCircularSlider_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A1931342F54678BDFD91384098CB8A4 /* Build configuration list for PBXNativeTarget "JOCircularSlider" */;
+			buildConfigurationList = 49515FDB10B6341BBF9FD824C2CD3D88 /* Build configuration list for PBXNativeTarget "Pods-JOCircularSlider_Example" */;
 			buildPhases = (
-				196757FD96C2CE5D5716EAE9DD7F5FBB /* Sources */,
-				C649589484C807AFB3C599769C2E2627 /* Frameworks */,
-				F011FBC5D8948E768570BFC9905CD4D9 /* Headers */,
+				7C8FA8F7749FCED29A7D276945504DAE /* Headers */,
+				A3EAE7F432385ED957F04A7ED11F480C /* Sources */,
+				59EB1522A7A60D4BD87BC1C66F7E295D /* Frameworks */,
+				87E8F38D5CBBA520016967CD634367BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEFD5953C91E86E7283181C2E6C7435D /* PBXTargetDependency */,
+			);
+			name = "Pods-JOCircularSlider_Example";
+			productName = "Pods-JOCircularSlider_Example";
+			productReference = F8772F284BC42DB63BFC81E98DE0CFEC /* Pods_JOCircularSlider_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D6BEF85A40B5F6295BAFB990665F82C /* JOCircularSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 052E7338BF4DBB74E5A23DD8BA3C8E5B /* Build configuration list for PBXNativeTarget "JOCircularSlider" */;
+			buildPhases = (
+				50527E77FE14AF7134C36F3E975CAC1C /* Headers */,
+				91699B33F14B457793D2150F2570654B /* Sources */,
+				D0E917382D549C57C564B7F108BC43EA /* Frameworks */,
+				A4C7F5C0939ABECB124D38FCE0424A53 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -289,124 +305,166 @@
 			);
 			name = JOCircularSlider;
 			productName = JOCircularSlider;
-			productReference = 50063FA42B13C6AC7E285EF6E17B8455 /* JOCircularSlider.framework */;
+			productReference = B91CD6C295CA97CEFAA4AD20F22F354B /* JOCircularSlider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2CCB4C791632458AF59683CD557BD517 /* Pods-JOCircularSlider_Example */ = {
+		8A71608391671CC50A2A5332B54B2107 /* Pods-JOCircularSlider_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F6DF00727E2194D7575EB029D994DB1E /* Build configuration list for PBXNativeTarget "Pods-JOCircularSlider_Example" */;
+			buildConfigurationList = CB6005CF8BB52137E9AD67960239ED97 /* Build configuration list for PBXNativeTarget "Pods-JOCircularSlider_Tests" */;
 			buildPhases = (
-				1F42A865DDA56938AD2644C78F7AD70C /* Sources */,
-				B028D2FBBA4864D4BFBB93B13F6964B1 /* Frameworks */,
-				63821404BE470CE586DA340F28804187 /* Headers */,
+				0FD21E68D8BB0B240B93DC36B3B4C764 /* Headers */,
+				A0597631B49F2310BEB05AB97DCF4F92 /* Sources */,
+				382BFB07AEAD456952F0B04574A7C424 /* Frameworks */,
+				7255699E6EC34AA415AE0E134DD3D97F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FCF3F5CB2C104CFB3F7BDEE99CFFC8F3 /* PBXTargetDependency */,
-			);
-			name = "Pods-JOCircularSlider_Example";
-			productName = "Pods-JOCircularSlider_Example";
-			productReference = 5AA090443210B9C2074BBFAD0869AEFB /* Pods_JOCircularSlider_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D5C1E7F21FD53DDC03B60ED681E12EE2 /* Pods-JOCircularSlider_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 209425E640BF54E03D1A10755953714E /* Build configuration list for PBXNativeTarget "Pods-JOCircularSlider_Tests" */;
-			buildPhases = (
-				CCE9B2A62FDB8B25784DA49E07CC0481 /* Sources */,
-				7438E9CF5852506D4AE664BC9EA185EB /* Frameworks */,
-				F0D5589F6BFB898C240D78ABD1ACDFA6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				43AD10C93DE35806B814600E216AA13E /* PBXTargetDependency */,
+				ABA75967BA733AC501B2220F8B7437D7 /* PBXTargetDependency */,
 			);
 			name = "Pods-JOCircularSlider_Tests";
 			productName = "Pods-JOCircularSlider_Tests";
-			productReference = 8D5270DA20CB96F2275E1E0914FF954D /* Pods_JOCircularSlider_Tests.framework */;
+			productReference = 9E4B76D0E6538F96D291A4FA1A630A87 /* Pods_JOCircularSlider_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1010;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = EA8D4B3B5FEB73B4671BCF5A2FB85670 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1C0D666E4014773B5A8A3BF86250EB69 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2A42614483C3321D5589EF03C68BD21C /* JOCircularSlider */,
-				2CCB4C791632458AF59683CD557BD517 /* Pods-JOCircularSlider_Example */,
-				D5C1E7F21FD53DDC03B60ED681E12EE2 /* Pods-JOCircularSlider_Tests */,
+				5D6BEF85A40B5F6295BAFB990665F82C /* JOCircularSlider */,
+				183CB84C6E2B895C955348B8CFBBCCD9 /* Pods-JOCircularSlider_Example */,
+				8A71608391671CC50A2A5332B54B2107 /* Pods-JOCircularSlider_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		7255699E6EC34AA415AE0E134DD3D97F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E8F38D5CBBA520016967CD634367BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C7F5C0939ABECB124D38FCE0424A53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		196757FD96C2CE5D5716EAE9DD7F5FBB /* Sources */ = {
+		91699B33F14B457793D2150F2570654B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F279B10D81426CDA2B4D20F24DAD4C39 /* CircularLayer.swift in Sources */,
-				A17D44DFB87DEA280B732B3AF8D967E0 /* CircularSlider.swift in Sources */,
-				743D8A879B30AAEFBBCB6285698E2614 /* DotLayer.swift in Sources */,
-				7953267214D5FC12A34450E2A68B5177 /* DotView.swift in Sources */,
-				5F060F7FB32A05BAAA29A6D9263F01BB /* Extensions.swift in Sources */,
-				A4822B41F3CCAE0023F3BC499CC78066 /* JOCircularSlider-dummy.m in Sources */,
-				05279D8CE1F1200AF957EDAC29D6F2F0 /* KnobView.swift in Sources */,
-				12F27053D39728CFA923CB46C4ECDD21 /* PointerView.swift in Sources */,
+				076A6F5C241022FC71D8DBD4138B935F /* CircularLayer.swift in Sources */,
+				48BF066848B178D38B1D77B1CE03CE74 /* CircularSlider.swift in Sources */,
+				EE6DD2EDBBDD99FC174B8E6E129C0577 /* DotLayer.swift in Sources */,
+				6EE657E2DA64147AF6D6F3C6EDD45CFD /* DotView.swift in Sources */,
+				4311CE5743C492E188A907CD716FEE7D /* Extensions.swift in Sources */,
+				8EACD401595A672CD6FBDC7BF4EF31A7 /* JOCircularSlider-dummy.m in Sources */,
+				CB85F9E723AFE97A344010F87CD24107 /* KnobView.swift in Sources */,
+				78652156A6F1C0DA05351138135C515B /* PointerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F42A865DDA56938AD2644C78F7AD70C /* Sources */ = {
+		A0597631B49F2310BEB05AB97DCF4F92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFC8DE54B07613BEBD7B506B9BAA2F56 /* Pods-JOCircularSlider_Example-dummy.m in Sources */,
+				533CFA7A6D635CE361362CDE1CB476AB /* Pods-JOCircularSlider_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCE9B2A62FDB8B25784DA49E07CC0481 /* Sources */ = {
+		A3EAE7F432385ED957F04A7ED11F480C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70C9290B98764939359E0FC4B75197F1 /* Pods-JOCircularSlider_Tests-dummy.m in Sources */,
+				1C5A08738A89F8A418C292765D2B7955 /* Pods-JOCircularSlider_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		43AD10C93DE35806B814600E216AA13E /* PBXTargetDependency */ = {
+		ABA75967BA733AC501B2220F8B7437D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-JOCircularSlider_Example";
-			target = 2CCB4C791632458AF59683CD557BD517 /* Pods-JOCircularSlider_Example */;
-			targetProxy = 64AF03836747A4595A8A59D132A87385 /* PBXContainerItemProxy */;
+			target = 183CB84C6E2B895C955348B8CFBBCCD9 /* Pods-JOCircularSlider_Example */;
+			targetProxy = 8B070B79D7C75FCB2DD559C44F3ACD5C /* PBXContainerItemProxy */;
 		};
-		FCF3F5CB2C104CFB3F7BDEE99CFFC8F3 /* PBXTargetDependency */ = {
+		DEFD5953C91E86E7283181C2E6C7435D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JOCircularSlider;
-			target = 2A42614483C3321D5589EF03C68BD21C /* JOCircularSlider */;
-			targetProxy = F083CA64179BB8A399A7B71A4098997E /* PBXContainerItemProxy */;
+			target = 5D6BEF85A40B5F6295BAFB990665F82C /* JOCircularSlider */;
+			targetProxy = 095EACC3FC28EF6F73340073AAEEAAEF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		553022A828EE1991F07D2D73F565AEF8 /* Debug */ = {
+		014C81D4C1541460042E3A374611B512 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436ABE8DA21D92546F539CD3E116D35A /* Pods-JOCircularSlider_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JOCircularSlider_Example/Pods-JOCircularSlider_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JOCircularSlider_Example/Pods-JOCircularSlider_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -438,8 +496,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -460,18 +516,21 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		56CF0B05250F73FA4BBE993053B7FF26 /* Debug */ = {
+		4CC53EE942C299587C9799A69248F6D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B7D9647D18079672F29FB498A56A9A6 /* Pods-JOCircularSlider_Example.debug.xcconfig */;
+			baseConfigurationReference = AD9F748AD229C57874283EE50F174F8E /* Pods-JOCircularSlider_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -484,7 +543,41 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JOCircularSlider_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-JOCircularSlider_Tests/Pods-JOCircularSlider_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JOCircularSlider_Tests/Pods-JOCircularSlider_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D8F3D92FCA2E32DAE1FA0B4178FED7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B5324DB8D8EA61C5CFA0B424BB1142A /* Pods-JOCircularSlider_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JOCircularSlider_Example/Pods-JOCircularSlider_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -497,15 +590,81 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		81944A403CFBAB42662C2844F4B70D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DAD159B8D9E4E595CF2B3877BBC7B29 /* Pods-JOCircularSlider_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JOCircularSlider_Tests/Pods-JOCircularSlider_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JOCircularSlider_Tests/Pods-JOCircularSlider_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		954106159C99200AC9E5D027C000D8C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 502A33D3ED684B363B286A881D36BB5C /* JOCircularSlider.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JOCircularSlider/JOCircularSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JOCircularSlider/JOCircularSlider-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JOCircularSlider/JOCircularSlider.modulemap";
+				PRODUCT_MODULE_NAME = JOCircularSlider;
+				PRODUCT_NAME = JOCircularSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		58CE816B060A41D32CEC095441D0E3E0 /* Release */ = {
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -537,8 +696,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -557,121 +714,19 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		6D1C55C7B5F52D17203ADDA3DB161467 /* Release */ = {
+		B8CF66013E9C678640B62C3D67D986B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48B7A11B996C1E189AF86519B5CDCFDA /* Pods-JOCircularSlider_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JOCircularSlider_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JOCircularSlider_Example/Pods-JOCircularSlider_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		80D1221CF6C5EAA2BE014E01FDA7EC8A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CC40B710FDDCFE776554B242E171266 /* Pods-JOCircularSlider_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JOCircularSlider_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JOCircularSlider_Tests/Pods-JOCircularSlider_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A8083007596766E5BFE5D074F9E38637 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACF26235D8F9ADBEB158E39410E4FE4D /* Pods-JOCircularSlider_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JOCircularSlider_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JOCircularSlider_Tests/Pods-JOCircularSlider_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B423F40E00D778102466C6FDAC5390ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EA3738B9F6FC9D9E9CC53A89218FFE6 /* JOCircularSlider.xcconfig */;
+			baseConfigurationReference = C7BFC2ACC25734BA685D8841C7403DA6 /* JOCircularSlider.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -684,7 +739,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/JOCircularSlider/JOCircularSlider-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JOCircularSlider/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/JOCircularSlider/JOCircularSlider-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -694,7 +749,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -702,80 +756,47 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		B57483A9C7C2B7E944BF08A4103145A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EA3738B9F6FC9D9E9CC53A89218FFE6 /* JOCircularSlider.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JOCircularSlider/JOCircularSlider-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JOCircularSlider/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JOCircularSlider/JOCircularSlider.modulemap";
-				PRODUCT_MODULE_NAME = JOCircularSlider;
-				PRODUCT_NAME = JOCircularSlider;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A1931342F54678BDFD91384098CB8A4 /* Build configuration list for PBXNativeTarget "JOCircularSlider" */ = {
+		052E7338BF4DBB74E5A23DD8BA3C8E5B /* Build configuration list for PBXNativeTarget "JOCircularSlider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B57483A9C7C2B7E944BF08A4103145A6 /* Debug */,
-				B423F40E00D778102466C6FDAC5390ED /* Release */,
+				954106159C99200AC9E5D027C000D8C6 /* Debug */,
+				B8CF66013E9C678640B62C3D67D986B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		209425E640BF54E03D1A10755953714E /* Build configuration list for PBXNativeTarget "Pods-JOCircularSlider_Tests" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A8083007596766E5BFE5D074F9E38637 /* Debug */,
-				80D1221CF6C5EAA2BE014E01FDA7EC8A /* Release */,
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		49515FDB10B6341BBF9FD824C2CD3D88 /* Build configuration list for PBXNativeTarget "Pods-JOCircularSlider_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				553022A828EE1991F07D2D73F565AEF8 /* Debug */,
-				58CE816B060A41D32CEC095441D0E3E0 /* Release */,
+				014C81D4C1541460042E3A374611B512 /* Debug */,
+				7D8F3D92FCA2E32DAE1FA0B4178FED7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F6DF00727E2194D7575EB029D994DB1E /* Build configuration list for PBXNativeTarget "Pods-JOCircularSlider_Example" */ = {
+		CB6005CF8BB52137E9AD67960239ED97 /* Build configuration list for PBXNativeTarget "Pods-JOCircularSlider_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56CF0B05250F73FA4BBE993053B7FF26 /* Debug */,
-				6D1C55C7B5F52D17203ADDA3DB161467 /* Release */,
+				4CC53EE942C299587C9799A69248F6D5 /* Debug */,
+				81944A403CFBAB42662C2844F4B70D92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
