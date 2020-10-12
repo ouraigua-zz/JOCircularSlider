@@ -1,5 +1,5 @@
 PODS:
-  - JOCircularSlider (1.0.0)
+  - JOCircularSlider (2.0.3)
 
 DEPENDENCIES:
   - JOCircularSlider (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JOCircularSlider: b0a2366cc0d303bc43cdf32afb18c266b2448a2c
+  JOCircularSlider: c4b8cf56855ee90c92bf9cbee94af77b934aa31d
 
 PODFILE CHECKSUM: 5f59154dfd18781ce4e81da44fa6f83c4aa7dc7e
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.3
